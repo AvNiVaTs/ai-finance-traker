@@ -1,0 +1,182 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #001132;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin: 0;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 1.5rem;
+  color: #f39c12;
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Dashboard Styles */
+#dashboard {
+  margin-bottom: 20px;
+}
+
+#dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#dashboard-form label {
+  font-weight: bold;
+}
+
+#dashboard-form input {
+  padding: 10px;
+  border: 1px solid #7f8c8d;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+#dashboard-form button {
+  padding: 10px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#dashboard-form button:hover {
+  background-color: #008c9e;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #3b4a57;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Expense Tracker */
+#expense-tracker {
+  margin-bottom: 20px;
+}
+
+#expense-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+#expense-form input,
+#expense-form button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #7f8c8d;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+#expense-form button {
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+#expense-form button:hover {
+  background-color: #1e8449;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#expense-list li {
+  padding: 10px;
+  background-color: #3b4a57;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Investment Advice */
+#investment-advice {
+  text-align: center;
+}
+
+#investment-advice button {
+  padding: 10px 20px;
+  background-color: #9b59b6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#investment-advice button:hover {
+  background-color: #8e44ad;
+}
+
+#advice-text {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #3b4a57;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #expense-form {
+    flex-direction: column;
+  }
+
+  #expense-form input,
+  #expense-form button {
+    flex: unset;
+  }
+}

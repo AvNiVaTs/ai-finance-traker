@@ -1,0 +1,19 @@
+{
+  "name": "finance-advisor",
+  "version": "1.0.0",
+  "description": "AI-based finance advisor",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
